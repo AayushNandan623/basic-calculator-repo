@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="complete-body">
+    <h1>Calculator</h1>
+    <div class="js-display display"> 
+      <div class="js-precious precious">
+        <br>
+      </div>
+      <div class="js-current current">
+        <br>
+      </div>
+    </div>
+      <div class="calculator-buttons">
+        <button class="js-cal-button cal-button" onclick="
+        button_input('1');
+        display_current_value();
+      ">1</button>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('2');
+        display_current_value();
+      ">2</button>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('3');
+        display_current_value();
+      ">3</button>
+      <button class="js-cal-button cal-button op-button" onclick="
+      op_button_input('+');
+      op_display();">+</button><br>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('4');
+        display_current_value();
+      ">4</button>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('5');
+        display_current_value();
+      ">5</button>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('6');
+        display_current_value();
+      ">6</button>
+      <button class="js-cal-button cal-button op-button" onclick="
+      op_button_input('-');
+      op_display();">-</button><br>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('7');
+        display_current_value();
+      ">7</button>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('8');
+        display_current_value();
+      ">8</button>
+      <button class="js-cal-button cal-button" onclick="
+        button_input('9');
+        display_current_value();
+      ">9</button>
+      <button class="js-cal-button cal-button op-button" onclick="
+      op_button_input('*');
+      op_display();">*</button><br>
+      <button class="js-cal-button cal-button" onclick="
+        zero_button_input('0');
+        display_current_value();
+      ">0</button>
+      <button class="js-cal-button cal-button" onclick="
+        decimal_button_input('.');
+        display_current_value();
+    ">.</button>
+      <button class="js-cal-button cal-button op-button" onclick="
+      result_button_input();
+      restset_op();
+      result_display();
+      ">=</button>
+      <button class="js-cal-button cal-button op-button" onclick="
+      op_button_input('/');
+      op_display();">/</button><br>
+      <button class="js-all-clear-button cal-button" onclick="
+      allClear();
+      ">AC</button>
+      </div>
+      
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

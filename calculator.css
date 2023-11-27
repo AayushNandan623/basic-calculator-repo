@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+  color: white;
+}
+.display{
+  text-align: right;
+  color: gray;
+}
+.display{
+  width: 292px;
+  text-align: right;
+}
+.complete-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cal-button{
+  font-size: 24px;
+  height: 70px;
+  width:70px;
+  border: none;
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 5px;
+  
+}
+.op-button{
+  background-color: orange;
+}
+.current{
+  font-size: 30px;
+  color: white;
+}
